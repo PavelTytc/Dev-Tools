@@ -1,18 +1,23 @@
 import React, {useState, useEffect} from 'react';
 import ReactDOM from 'react-dom';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import Main from './components/Main';
+import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
+import Main from './components/Main/Main';
+
 
 
 
 function App () {
-    return <>
-        <Header/>,
-        <Main/>, 
-       <Footer/>
+    return (
+    <div className='App'>
+       <Header/>
+       <main className='posts'>
+       <Main/>
+       </main>
+        <Footer/>
        
-    </>
+    </div>
+    )
    
 }
 
