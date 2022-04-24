@@ -6,9 +6,8 @@ function Footer() {
         <div className='footer'>
         
        <div className='footer__container'>
-           <a className='nav' href="#">Текст</a>
-           <a className='nav' href="#">Текст</a>
-           <a className='nav' href="#">Текст</a>
+           <h4 >© 2022 OldSchool Coloboration</h4>
+           
            
           
            

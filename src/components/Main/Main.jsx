@@ -2,11 +2,12 @@ import React from 'react';
 import api from '../../Api';
 import "./Main.css";
 
-
-function Main () {
+console.log(api.getAllPosts()); //смотрим апи в консоли
+function Main (props) {
+    
     return (
        <div className='main'>
-           <h1 href = "/api">DevBlog</h1>
+           <div>{props.api}</div>
        </div>
     )
    

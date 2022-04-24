@@ -31,14 +31,13 @@
 	color: darkgreen;
 }
 .nav__container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     align-items: center;
     justify-content: center;
     width: 500px;
 }
 a {
-    text-align: center;
-
-	padding-right: 50px;
-	text-shadow: 10px 10px 10px rgb(84, 107, 188);
+    padding-right: 50px;
+	text-shadow: 5px 8px 5px rgb(84, 107, 188);
 }

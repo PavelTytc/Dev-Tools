@@ -7,15 +7,18 @@ class Api {
         this.path = path;
         this.token = token;
     }
-    getProductList() {
-        return fetch(`${this.path}/products`, {
+    getAllPosts() {
+        return fetch(`${this.path}/posts`, {
             headers: {
                 authorization: `Bearer ${this.token}`
             }
-        }).then(responseHandler);
+        }).then(responseHandler)
+        .then((result) => {
+            console.log(result);
+        });
     }
-    getSingleProduct(id) {
-        return fetch(`${this.path}/products/${id}`, {
+    getSinglePost(id) {
+        return fetch(`${this.path}/posts/${id}`, {
             headers: {
                 authorization: `Bearer ${this.token}`
             }
@@ -29,5 +32,6 @@ const config = {
 }
 
 const api = new Api(config);
+
 
 export default api;
