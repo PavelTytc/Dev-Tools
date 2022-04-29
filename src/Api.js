@@ -24,6 +24,15 @@ class Api {
             }
         }).then(responseHandler);
     }
+    createPost(postData) {
+        return fetch(`${this.path}/posts`, {
+            method: 'POST',
+            headers: {
+                authorization: `Bearer ${this.token}`
+            },
+            body: JSON.stringify(postData),
+        })
+    }
 }
 
 const config = {
